@@ -1,0 +1,2 @@
+#!/bin/bash
+fiind . -name "'.js" -type f -delete
