@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+#this script prints Best School 10 times
+m=1; while [ $m -le 10 ]; do echo "Best School"; ((m++)); done
