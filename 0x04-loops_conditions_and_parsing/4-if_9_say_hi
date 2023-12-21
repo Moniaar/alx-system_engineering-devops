@@ -10,7 +10,7 @@ do
     # Check the value of n
     if [ $n == 10 ]
     then
-        echo "hi"
+        echo "Hi"
     fi
     # Print the current value of n
     echo "Best School"
