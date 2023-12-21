@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+# print best school till the 10th time then print hi
+n=0
+# Iterate the loop for 5 times
+while [ $n -le 9 ]
+do
+    # Increment the value of n by 1
+    (( n++ ))
+
+    # Check the value of n
+    if [ $n == 10 ]
+    then
+        echo "hi"
+    fi
+    # Print the current value of n
+    echo "Best School"
+
+done
