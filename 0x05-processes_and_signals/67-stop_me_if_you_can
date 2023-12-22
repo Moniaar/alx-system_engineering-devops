@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+# This script stops the "7-highlander" process on receiving a SIGTERM signal
+
+trap 'echo "I am invincible!!!"; kill -TERM "$(pgrep -f 7-highlander)"' SIGTERM
+
+while true
+do
+  echo "To infinity and beyond"
+  sleep 2
+done
