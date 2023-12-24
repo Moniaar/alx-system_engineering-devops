@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+
 # print best school till the 10th time then print hi
 n=0
 # Iterate the loop for 5 times
