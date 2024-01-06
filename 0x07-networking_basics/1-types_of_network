@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 #A shell script to sovle networking questions
-[3]
-[2]
-[1]
+echo "3"
+echo "2"
+echo "1"
