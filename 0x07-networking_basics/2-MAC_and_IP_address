@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Bash script to answer IP and MAC questions
+[ "$2" ]
+[ "$3" ]
