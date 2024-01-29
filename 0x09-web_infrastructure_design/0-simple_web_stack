@@ -1,0 +1,19 @@
+What is a server?
+A server is a phsyical or a software device that will provide services for you as a client. For example hosting a website using your browser.
+What is the role of the domain name?
+to make sure that the IP address is readable for us as humans, instead of dealing with numbers and having to memorize them.
+What type of DNS record www is in www.foobar.com?
+CNAME that resolves the subdomain to the domain name.
+What is the role of the web server?
+the web server gives back the static version of what you requested and if it requires more logic work it passes that to the application server.
+What is the role of the application server?
+It applies the missing logic into your request, specifically the dyanmic content.
+What is the role of the database?
+It stores the information of the request you sent in an organized manner.
+What is the server using to communicate with the computer of the user requesting the website?
+The web server
+You must be able to explain what the issues are with this infrastructure:
+SPOF: this can happen either for the web server of the applicaion one, or the server that is providing us with the service at the end, we can solve this by including another server beside the old one.
+Downtime when maintenance needed (like deploying new code web server needs to be restarted)?
+Can be measured using specific algorithems, but this downtime will be long since we have only 1 server, again suppling the system with one more server in stand by is better.
+Cannot scale if too much incoming traffic? Because there is not monitroring system to tell you where to go, and there is only 1 server to work with and to point the whole work towards it.
