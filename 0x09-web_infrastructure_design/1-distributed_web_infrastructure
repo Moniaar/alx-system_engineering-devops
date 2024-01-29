@@ -1,0 +1,22 @@
+For every additional element, why you are adding it
+The load balancer because we have 2 servers now, in order to equally distribute the work load (the traffic between both), and I added one additional data base and application file to the new the server to work as a
+seprate unit if the other server went down.
+What distribution algorithm your load balancer is configured with and how it works?
+Since this is just 2 server configueration, I will use the round Robin algorithhem to equally distribute everything. when the request hits server1, it responds, when
+another request comes at the same time or the seconed time, it goes to server 2, and this contiunes in circular manner.
+Is your load-balancer enabling an Active-Active or Active-Passive setup, explain the difference between both
+My LB is active passive, the difference is that active active keeps both servers ready to serve at any time, meanwhile the active passive works like this:
+You request the service and the server that is working will repspond, meanwhile the other one won't work unless your primary server goes down, it get activated to work. This other
+server is always at the stand by situation. Now I chose active passive because this website isn't going to have that much complexity to supply it, and it will give more
+effiecnt way of dealing with topics like savinf power because the other server can remain passive untill you actually give it the signal to work.
+How a database Primary-Replica (Master-Slave) cluster works?
+the primary (master) server gives a copy from itself (as a database server) to the seconadary data base ones (slaves).
+What is the difference between the Primary node and the Replica node in regard to the application?
+The primary node comes from the primary server directly. meanwhile the replica comes afte being duplicated as a result from the primary so it takes more time.
+
+You must be able to explain what the issues are with this infrastructure:
+Where are SPOF? The SPOF can be in the new inserted server in addition to the same SPOF in task 0.
+Security issues (no firewall, no HTTPS)?
+ This can return what you want without that much sercity into the request, carrying what the whole website is giving without any filters for the content as it's coming back.
+No monitoring?
+If there is an issue in your website request, we will never be able t detect the point where the issue is or fix it without monitoring the situation of each server in a regular bases.
