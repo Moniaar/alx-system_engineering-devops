@@ -1,0 +1,7 @@
+The additional new elemnts are:
+The new added server to work in standby mode in case the other 2 servers modified by the clustering system isn't working or there was so much load applied to them.
+The firewall and the monitoring system to the new server to help secure the system from future failure and keep track of developing it using the monitoring system.
+The firewall will makw sure that your payload is matching to what you set it to be, and it will gurauntee a secure connection with the server.
+The clustring system with the other server is to improve avaliability, by making sure your system is avaliable all times when requested. Spliting the compnents is better because
+the security will be increased as well, and the ability to fix the system in case of a crash is greater than the compnents being all together. The load balancer will
+work with both the clustring system and the server that is working alone to make sure that the load is well ditributed among both parts.
