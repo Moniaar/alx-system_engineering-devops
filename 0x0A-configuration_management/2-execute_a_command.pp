@@ -3,4 +3,4 @@
 exec { 'Killmenow':
   command  => 'pkill killmenow',
   provider => 'shell'
-}}
+}
