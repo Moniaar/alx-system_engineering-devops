@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
-
-ssh -v -i ~/.ssh/school ubuntu@34.224.94.213
+# connection with ssh to a server using its IP address
+ssh -i ~/.ssh/school ubuntu@34.224.94.213
