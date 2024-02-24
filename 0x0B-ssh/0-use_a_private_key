@@ -7,4 +7,3 @@ PRIVATE_KEY="~/.ssh/school"
 
 # Connect to the server using ssh
 ssh -i $PRIVATE_KEY $USERNAME@$SERVER_IP
-
