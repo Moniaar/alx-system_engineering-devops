@@ -1,1 +1,3 @@
 #!/usr/bin/env bash
+#Sharing your SSH client configuration
+ssh -v ubuntu@34.224.94.213
