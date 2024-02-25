@@ -1,0 +1,3 @@
+### What is a newtwork sniffing?: ###
+Network sniffing is the use of a software tool, called a network sniffer, that monitors or sniffs the data flowing over computer network links in real-time. This software tool is
+ either a self-contained software program or a hardware device with the appropriate software or firmware.
