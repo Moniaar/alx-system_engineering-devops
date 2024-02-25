@@ -22,6 +22,7 @@ formerly known as Ethereal is widely recognized as the world's most popular netw
 Isuues with these tools: they provide easy access to some private information such as network passwords. Check with the owners to get permission before using a sniffer on their network. In addition, Network probes only intercept data from networks their host computer is attached to.
 
 Reference: https://intranet.alxswe.com/rltoken/eF4956aQFYnhS_i6IF9R-g 
+
 ---
 # What is ARP spoofing: #
 ARP spoofing is a type of attack in which a malicious actor sends falsified ARP (Address Resolution Protocol) messages over a local area network. This results in the linking of an attacker’s MAC address with the IP address of a legitimate computer or server on the network. Once the attacker’s MAC address is connected to an authentic IP address, the attacker will begin receiving any data that is intended for that IP address. It can only occur on local area networks that utilize the Address Resolution Protocol.
@@ -42,4 +43,5 @@ Used to steal sensitive information. Beyond this, ARP spoofing attacks are often
 4. Use cryptographic network protocols: Transport Layer Security (TLS), Secure Shell (SSH), HTTP Secure (HTTPS) and other secure communications protocols as they encrypt data when they send and ask for authentication when they receieve something.
 
 Reference: https://intranet.alxswe.com/rltoken/RK-4WtV0YCSETDSG9lr1hw
+
 ---
