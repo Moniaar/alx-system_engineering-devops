@@ -1,1 +1,7 @@
 #!/usr/bin/env bash
+# A bash script that will configure your ngnix so that you would host an html
+# page that gives back hello helborton
+sudo apt-get update
+sudo apt-get -y install nginx
+echo "Hello world!" && sudo tee /var/www/html/index.html
+service nginx start
