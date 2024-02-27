@@ -8,5 +8,8 @@ fi
 # Assign parameters to variables
 FILE_PATH=$2
 SSH_KEY=$1
+USER="ubuntu"
+IP_ADD=34.224.94.213
+
 # Transfer the file using scp
-scp -o StrictHostKeyChecking=no -i "$SSH_KEY" "$FILE_PATH" ubuntu@34.224.94.213:~/
+scp -o StrictHostKeyChecking=no -i "$SSH_KEY" "$FILE_PATH" $USER@$IP_ADD:~/
