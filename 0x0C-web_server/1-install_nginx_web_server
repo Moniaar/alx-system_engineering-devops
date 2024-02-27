@@ -3,5 +3,5 @@
 # page that gives back hello helborton
 sudo apt-get update
 sudo apt-get -y install nginx
-echo "Hello world!" && sudo tee /var/www/html/index.html
+echo "Hello world!" | sudo tee /var/www/html/index.html
 service nginx start
