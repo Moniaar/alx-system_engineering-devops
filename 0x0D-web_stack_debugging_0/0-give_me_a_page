@@ -1,13 +1,5 @@
 #!/usr/bin/env bash
-#Create a Dockerfile
+#  return a page containing Hello Holberton when querying the root of Apache
 
-echo -e "FROM httpd:2.4\nCOPY ./index.html /usr/local/apache2/htdocs/" > Dockerfile
-
-# Create the HTML file
-echo -e '<!DOCTYPE html>\n<html>\n<head>\n<title>Hello Holberton</title>\n</head>\n<body>\n<h1>Hello Holberton</h1>\n</body>\n</html>' > index.html
-
-# Build the Docker image
-docker build -t apache-hello .
-
-# Run the Docker container
-docker run -p 8080:80 -d apache-hello
+echo "ServerName localhost" >> /etc/apache2.conf
+sudo service apache2 stat
