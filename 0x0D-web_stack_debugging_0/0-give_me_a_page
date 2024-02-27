@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 #Create a Dockerfile
+
 echo -e "FROM httpd:2.4\nCOPY ./index.html /usr/local/apache2/htdocs/" > Dockerfile
 
 # Create the HTML file
