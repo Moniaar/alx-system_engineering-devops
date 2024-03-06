@@ -27,3 +27,4 @@ else
     sudo service nginx restart
     echo "Nginx configured to listen on port 80 for all active IPv4 IPs."
 fi
+
