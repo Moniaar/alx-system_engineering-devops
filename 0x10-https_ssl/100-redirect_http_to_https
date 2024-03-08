@@ -46,5 +46,3 @@ backend server_backend
         balance roundrobin
         server 388179-web-01 34.224.94.213:80 check
         server 388179-web-02 100.26.211.14:80 check
-}
-}
