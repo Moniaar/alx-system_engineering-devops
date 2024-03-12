@@ -5,7 +5,7 @@ defaults
 
 frontend front
         bind 0:80
-        bind *:443 ssl crt /etc/haproxy/certs/www.moniaar.tech.pem
+        bind *:443 ssl crt /etc/haproxy/certs/moniaar.tech.pem
         redirect scheme https if !{
  ssl_fc }
         default_backend server_backend
