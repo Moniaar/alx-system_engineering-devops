@@ -17,7 +17,6 @@ if __name__ == "__main__":
 
         user_name = usr_json.get('name')
         usr_todos = [task for task in todos_json if task.get('userId') == id]
-        todos_done = [task for task in usr_todos if task.get('completed')]
 
         with open(f'{id}.csv', 'w') as file:
             for task in usr_todos:
@@ -29,4 +28,4 @@ if __name__ == "__main__":
                                                         task_status,
                                                         task_title
                                                         )
-                             )
+                           )
