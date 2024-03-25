@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 """ a python script that uses a fake online REST API, for a given employee ID,
-returns information about his/her TODO list progress
-"""
+returns information about his/her TODO list progress in CVS format"""
 import re
 import requests
 from sys import argv
