@@ -3,7 +3,6 @@
 returns information about his/her TODO list progress
 """
 import re
-import json
 import requests
 from sys import argv
 
@@ -16,7 +15,7 @@ if __name__ == "__main__":
         usr_json = requests.get(f'{API}/users/{id}').json()
         todos_json = requests.get(f'{API}/todos').json()
 
-        user_name = usr_json.get('name')
+        user_name = usr_json.get('username')
         usr_todos = [task for task in todos_json if task.get('userId') == id]
 
         with open(f'{id}.csv', 'w') as file:
