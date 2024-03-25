@@ -2,8 +2,8 @@
 """ a python script that uses a fake online REST API, for a given employee ID,
 returns information about his/her TODO list progress using json diff format now
 """
-import re
 import json
+import re
 import requests
 from sys import argv
 
