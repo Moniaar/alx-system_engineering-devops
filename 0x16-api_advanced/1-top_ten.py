@@ -10,7 +10,6 @@ def top_ten(subreddit):
     headers = {'User-Agent': '0x16-api_advanced:project:v1.0.0'}
     params = {'limit': 10}
     response = requests.get(url, headers=headers, params=params)
-
     if response.status_code == 200:
         data = response.json().get('data')
         [print(child["data"]["title"]) for child in data["children"]]
