@@ -1,7 +1,7 @@
 #!/usr/bin/python3
-import requests
 """This is the module to handle requests for sending
 HTTP requests to the Reddit API"""
+import requests
 
 
 def number_of_subscribers(subreddit):
