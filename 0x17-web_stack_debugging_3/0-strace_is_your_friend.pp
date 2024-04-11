@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 0-strace_is_your_friend.pp
 
 # Puppet code to fix the Apache 500 Internal Server Error issue
@@ -15,3 +16,11 @@ service {
   enable => true,
   require => Package['libapache2-mod-php'],
 }
+=======
+# fixing Apache is returning a 500 error
+
+exec { 'fix_apache_error_config':
+        command  => 'sed -i s/.phpp/.php/g /var/www/html/wp-settings.php',
+        provider => 'shell'
+}
+>>>>>>> 755381b5e999927009f3053f59c2d6eb6aafd233
