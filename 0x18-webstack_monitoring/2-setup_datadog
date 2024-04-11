@@ -1,0 +1,18 @@
+{
+
+    "dashboards": [
+        {
+
+            "id": "uyi-zim-pm7",
+            "title": "Omnia's first DashBoard",
+            "description": "[[suggested_dashboards]]",
+            "layout_type": "ordered",
+            "url": "/dashboard/uyi-zim-pm7/omnias-first-dashboard",
+            "is_read_only": false,
+            "created_at": "2024-04-11T18:03:21.789124+00:00",
+            "modified_at": "2024-04-11T18:06:19.114548+00:00",
+            "author_handle": "www.moniaar@gmail.com",
+            "deleted_at": null
+        }
+    ]
+}
