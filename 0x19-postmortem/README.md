@@ -8,6 +8,7 @@ The following report is to breakdown what actually happend on the server side on
 
 ### Issue Summary ###
 From 6:30AM to 10:00AM, we encountred an issue from an outsource that clearly messed with the conficguration file that we use to automate our server work, and enhanced that by playing aournd with the data base so that he can transfer other people balances into his own. Around 6:28AM a user identifeied the problem when he couldn't log into his account, after contacting the support team it was identfied that his account was the one that the hacker was using to go into other people accounts. Other users could still regiester but they could have their account unstable or not being able to do any transaction probarly.
+- 6:30AM: the social media team was alerted by the upset customer
 - 6:49AM: Changes were made immideiatly for the config file
 - 7:15AM: Restarting of the server
 - 8:00AM: 95% of the traffic are back online
