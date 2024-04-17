@@ -3,3 +3,5 @@ A child process is a process created by another process. The creator process is 
 Apache creates child processes (or children, if you prefer) whenever the number of requests (web page accesses from users) exceeds the maximum allowed number of requests. When the maximum number of child process requests is exceeded, another child process spawns.
 To view all running processes along with their child processes in a “tree” format, use the following command:
 ``` ps axf ```
+
+- If the script of the ngnix installing task in the server isn't working or any other task, add sudo at the beginning of the command to execute the file for the task (1-install_nginx_web_server): ``` sudo ./1-install_nginx_web_server > /dev/null 2>&1 ```
