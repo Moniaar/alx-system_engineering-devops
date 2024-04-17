@@ -1,27 +1,11 @@
 #!/usr/bin/env bash
+# A bash script to install nginx and configure 404 page
 
-# Create a custom 404 page with the required content
-echo '<!DOCTYPE html><html><head><title>404 Not Found</title></head><body><h1>Ceci n'"'"'est pas une page</h1></body></html>' | sudo tee /var/www/html/404.html > /dev/null
-
-# Create a custom Nginx configuration file for the custom 404 page
-echo 'server {
-    listen 80 default_server;
-    listen [::]:80 default_server;
-
-    root /var/www/html;
-    index index.html;
-
-    server_name _;
-
-    error_page 404 /404.html;
-    location = /404.html {
-        internal;
-    }
-
-    location / {
-        try_files $uri $uri/ =404;
-    }
-}' | sudo tee /etc/nginx/sites-available/custom_404 > /dev/null
-
-# Create a symbolic link to enable the custom configuration
-sudo ln -s /etc/nginx/sites-available/custom_404 /etc/nginx/sites-enabled/
+sudo apt-get update
+sudo apt-get -y install nginx
+echo 'Hello World!' | sudo tee /var/www/html/index.html
+sudo sed -i "48i\\\trewrite ^/redirect_me https://www.youtube.com/watch?v=QH2-TGUlwu4 permanent;\n" /etc/nginx/sites-available/default
+echo "Ceci n'est pas une page" | sudo tee /var/www/html/404.html
+sudo sed -i "50i\\\terror_page 404 /404.html;\n\tlocation = /var/www/html/404.html {\n\t\tinternal;\n\t}" /etc/nginx/sites-available/default
+sudo service nginx restart
+sudo service nginx reload
