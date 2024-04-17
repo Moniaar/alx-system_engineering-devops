@@ -9,3 +9,5 @@ Like any other element of your IT infrastructure, containers need to be monitore
 You can use DevOps programs to deploy and monitor Docker containers but they're not optimized for containers.
 The answer is cloud orchestration tools. These monitor and manage container clustering and scheduling. In May 2017, there were three major cloud container orchestration programs: Docker Swarm, Kubernetes, and Mesosphere. Today, these are all still around, but Kubernetes is by far the most dominant cloud-orchestration program.
 In a nutshell, here's what Docker can do for you: It can get more applications running on the same hardware than other technologies; it makes it easy for developers to quickly create ready-to-run containered applications; and it makes managing and deploying applications much easier.
+
+- If any of the commands isn't running in your server, we can add sudo at the beginning of the command and it will work.
