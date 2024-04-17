@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
-# A bash script that will configure your ngnix so that you would host an html
-# page that gives back hello helborton
+# This is a bash script that install nginx and set a listening port to 80
+
 sudo apt-get update
 sudo apt-get -y install nginx
-echo "Hello world!" | sudo tee /var/www/html/index.html
+echo 'Hello World!' | sudo tee /var/www/html/index.html
 service nginx start
